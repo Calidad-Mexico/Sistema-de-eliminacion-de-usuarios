@@ -1,0 +1,85 @@
+/* src/pages/DeleteAccount.css */
+
+.delete-container {
+  min-height: 100vh;
+  background-color: #f9fafb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.delete-card {
+  max-width: 500px;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.delete-title {
+  text-align: center;
+  color: #dc2626;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.delete-text {
+  color: #374151;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.delete-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.delete-input {
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.delete-input:focus {
+  border-color: #ef4444;
+}
+
+.delete-button {
+  background-color: #ef4444;
+  color: white;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+  background-color: #dc2626;
+}
+
+.delete-success {
+  text-align: center;
+}
+
+.success-title {
+  color: #16a34a;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.success-text {
+  color: #374151;
+  font-size: 0.95rem;
+}
