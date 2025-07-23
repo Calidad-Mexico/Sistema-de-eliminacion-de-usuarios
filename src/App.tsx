@@ -14,7 +14,7 @@ export default function DeleteAccount() {
             .sendForm(
                 'service_94g7ckr',
                 'template_bfvfw7m',
-                form.current,
+                form.current!,
                 {
                     publicKey: 'QY1VxTSLuLC1glh4L',
                 }
@@ -33,7 +33,7 @@ export default function DeleteAccount() {
             .sendForm(
                 'service_94g7ckr',
                 'template_8if0lal',
-                form.current,
+                form.current!,
                 {
                     publicKey: 'QY1VxTSLuLC1glh4L',
                 }
