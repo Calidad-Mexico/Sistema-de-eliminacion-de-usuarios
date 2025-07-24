@@ -52,43 +52,49 @@ export default function DeleteAccount() {
     }
 
     return (
-        <div className="delete-container">
-            <div className="delete-card">
-                <h1 className="delete-title">Solicitud de eliminación de cuenta</h1>
+        <div>
+            <header className="delete-header">
+                <h1>Eliminacion de cuenta Calidad Mexico</h1>
+            </header>
 
-                {!submitted ? (
-                    <>
-                        <p className="delete-text">
-                            Esta acción eliminará <strong>permanentemente</strong> tu cuenta y todos los datos asociados, incluyendo historial, configuraciones y cualquier contenido generado.
-                        </p>
-                        <p className="delete-text">
-                            Una vez que se elimine tu cuenta, <strong>no podrás recuperarla</strong>. Por favor, asegúrate de que deseas continuar.
-                        </p>
-                        <p className="delete-text">
-                            Ingresa tu correo electrónico para confirmar la eliminación:
-                        </p>
+            <div className="delete-container">
+                <div className="delete-card">
+                    <h1 className="delete-title">Solicitud de eliminación de cuenta</h1>
 
-                        <form ref={form} onSubmit={sendEmail} className="delete-form">
-                            <input
-                                type="email"
-                                name="user_email"
-                                placeholder="tucorreo@ejemplo.com"
-                                className="delete-input"
-                                required
-                            />
-                            <button type="submit" className="delete-button">
-                                Solicitar eliminación permanente
-                            </button>
-                        </form>
-                    </>
-                ) : (
-                    <div className="delete-success">
-                        <h2 className="success-title">¡Solicitud recibida!</h2>
-                        <p className="success-text">
-                            Procesaremos tu solicitud en un plazo de 3 a 5 días hábiles. Todos los datos serán eliminados de forma irreversible.
-                        </p>
-                    </div>
-                )}
+                    {!submitted ? (
+                        <>
+                            <p className="delete-text">
+                                Esta acción eliminará <strong>permanentemente</strong> tu cuenta y todos los datos asociados, incluyendo historial, configuraciones y cualquier contenido generado.
+                            </p>
+                            <p className="delete-text">
+                                Una vez que se elimine tu cuenta, <strong>no podrás recuperarla</strong>. Por favor, asegúrate de que deseas continuar.
+                            </p>
+                            <p className="delete-text">
+                                Ingresa tu correo electrónico para confirmar la eliminación:
+                            </p>
+
+                            <form ref={form} onSubmit={sendEmail} className="delete-form">
+                                <input
+                                    type="email"
+                                    name="user_email"
+                                    placeholder="tucorreo@ejemplo.com"
+                                    className="delete-input"
+                                    required
+                                />
+                                <button type="submit" className="delete-button">
+                                    Solicitar eliminación permanente
+                                </button>
+                            </form>
+                        </>
+                    ) : (
+                        <div className="delete-success">
+                            <h2 className="success-title">¡Solicitud recibida!</h2>
+                            <p className="success-text">
+                                Procesaremos tu solicitud en un plazo de 3 a 5 días hábiles. Todos los datos serán eliminados de forma irreversible.
+                            </p>
+                        </div>
+                    )}
+                </div>
             </div>
         </div>
     )

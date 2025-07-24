@@ -83,3 +83,12 @@
   color: #374151;
   font-size: 0.95rem;
 }
+
+.delete-header {
+  background-color: #f44336;
+  color: white;
+  padding: 1px;
+  text-align: center; /* Centra el texto horizontalmente */
+  font-size: 1rem;
+  font-weight: bold;
+}
