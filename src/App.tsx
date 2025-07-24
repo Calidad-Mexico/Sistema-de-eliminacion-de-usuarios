@@ -52,7 +52,7 @@ export default function DeleteAccount() {
     }
 
     return (
-        <div>
+        <div className="box-delete">
             <header className="delete-header">
                 <h1>Eliminacion de cuenta Calidad Mexico</h1>
             </header>
