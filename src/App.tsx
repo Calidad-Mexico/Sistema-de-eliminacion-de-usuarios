@@ -12,7 +12,7 @@ export default function DeleteAccount() {
 
         emailjs
             .sendForm(
-                'service_94g7ckr',
+                'service_mg3s9jk',
                 'template_bfvfw7m',
                 form.current!,
                 {
@@ -31,7 +31,7 @@ export default function DeleteAccount() {
 
         emailjs
             .sendForm(
-                'service_94g7ckr',
+                'service_mg3s9jk',
                 'template_8if0lal',
                 form.current!,
                 {
